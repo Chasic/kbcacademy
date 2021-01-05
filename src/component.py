@@ -78,5 +78,9 @@ class Component(KBCEnvHandler):
         self.write_state_file(state)
 
 
-
-(Component()).run()
+if __name__ == "__main__":
+    try:
+        (Component()).run()
+    except Exception as e:
+        logging.exception(e)
+        exit(1)
