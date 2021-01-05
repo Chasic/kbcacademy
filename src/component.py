@@ -10,6 +10,7 @@ APP_VERSION = "0.0.1"
 KEY_PRINT_ROWS = 'print_rows'
 MANDATORY_PARS = [KEY_PRINT_ROWS]
 
+
 class Component(KBCEnvHandler):
 
     def __init__(self, debug=False):
