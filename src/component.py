@@ -38,7 +38,7 @@ class Component(KBCEnvHandler):
         input_tables = self.get_input_tables_definitions()
         first_input_table = input_tables[0]
 
-        print('Running...')
+        logging.info('Running...')
 
         output_file_name = 'output.csv'
         output_file = os.path.join(self.tables_out_path, output_file_name)
@@ -53,7 +53,7 @@ class Component(KBCEnvHandler):
             for index, l in enumerate(reader):
                 # print line
                 if print_rows:
-                    print(f'Printing line {index}: {l}')
+                    logging.info(f'Printing line {index}: {l}')
                 # add row number
                 l['row_number'] = index
                 writer.writerow(l)
@@ -71,7 +71,7 @@ class Component(KBCEnvHandler):
         if 'last_update' in state:
             last_update = state['last_update']
 
-        print(f"Last update: {last_update}")
+        logging.info(f'Last update: {last_update}')
 
         state['last_update'] = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
