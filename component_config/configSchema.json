@@ -10,6 +10,6 @@
             "type": "boolean",
             "default": true,
             "propertyOrder": 1
-        },
+        }
   }
 }
