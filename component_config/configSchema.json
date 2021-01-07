@@ -2,8 +2,14 @@
   "type": "object",
   "title": "COnfiguration",
   "required": [
+    "print_rows"
   ],
   "properties": {
-
+    "print_rows": {
+            "title": "Print rows",
+            "type": "boolean",
+            "default": true,
+            "propertyOrder": 1
+        },
   }
 }
