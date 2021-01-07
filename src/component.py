@@ -5,7 +5,7 @@ from pathlib import Path
 import datetime
 from kbc.env_handler import KBCEnvHandler
 
-APP_VERSION = "0.0.2"
+APP_VERSION = "0.0.3"
 
 KEY_PRINT_ROWS = 'print_rows'
 MANDATORY_PARS = [KEY_PRINT_ROWS]

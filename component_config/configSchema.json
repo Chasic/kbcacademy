@@ -1,6 +1,6 @@
 {
   "type": "object",
-  "title": "COnfiguration",
+  "title": "Configuration",
   "required": [
     "print_rows"
   ],
